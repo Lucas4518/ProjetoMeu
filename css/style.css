@@ -1,42 +1,24 @@
 .faxa {
-    background-color: blue; /* Cor de fundo do nav */
+    background-color: blue;
 }
 
-.fakeimg {
-    background: #aaa; /* Cor de fundo cinza para as imagens */
-    display: flex; /* Flexbox para centralizar o conteúdo */
-    justify-content: center; /* Centraliza a imagem na horizontal */
-    align-items: center; /* Centraliza a imagem na vertical */
-    overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
-    width: 100%; /* A largura do contêiner ocupa 100% do seu espaço disponível */
-    height: auto; /* Permite que a altura seja ajustada de acordo com a imagem */
-}
-
-.fakeimg img {
-    width: 856px; /* Largura fixa de 856px para as imagens PS2 e PS5 */
-    height: auto; /* A altura se ajusta proporcionalmente à largura */
-    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner sem cortar */
-    object-position: center; /* Garante que a imagem será centralizada no contêiner */
-}
-
-/* Ajustes para dispositivos móveis (telas pequenas) */
 @media (max-width: 576px) {
     .fakeimg {
-        height: auto; /* A altura se ajusta automaticamente no mobile */
+        height: auto;
+        margin-bottom: 1rem;
     }
-    .fakeimg img {
-        width: 100%; /* A largura ocupa 100% da tela */
-        height: auto; /* A altura se ajusta proporcionalmente */
-        object-fit: contain; /* Mantém a imagem sem cortar */
-    }
-}
 
-/* Ajustes para telas maiores (desktop) */
-@media (min-width: 577px) {
     .fakeimg img {
-        width: 856px; /* Largura fixa de 856px */
-        height: auto; /* A altura se ajusta automaticamente */
-        object-fit: contain; /* Ajuste de imagem sem corte */
-        object-position: center; /* Imagem centralizada */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .col-sm-8 .fakeimg img[src="assets/img/ps25.png"] {
+        width: 90%;
+    }
+
+    .col-sm-8 p {
+        margin-top: 1rem;
     }
 }
