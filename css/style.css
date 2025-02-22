@@ -3,3 +3,35 @@
     background-color:blue;
 
 }
+
+.fakeimg img {
+    width: -1000px;
+    height: 270px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Responsividade no mobile */
+@media (max-width: 576px) {
+    .fakeimg {
+        height: auto; /* A altura vai ser ajustada no mobile */
+    }
+    .fakeimg img {
+        width: 100%; /* A largura no mobile vai ocupar 100% da tela */
+        height: auto; /* A altura vai ser ajustada automaticamente */
+        object-fit: contain; /* A imagem vai se ajustar sem cortar */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  
